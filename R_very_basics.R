@@ -5,7 +5,7 @@ x
 x[1]
 x[c(1, 2)]
 x[1:2]  # However, direct access to elements is the hallmark of a MATLAB user
-x==3
+x == 3
 x[x==3]
 x==3 | x==5 
 x %in% c(3,5)
@@ -57,7 +57,7 @@ leeds <- read.csv("leeds_accidents.csv")
 leeds
 
 # Factor variables
-leeds$ref_number
+leeds$ref_number[1:3]
 
 # Can be tricky and lead to difficulties.
 (num_as_char <- "42")

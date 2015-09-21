@@ -36,9 +36,9 @@ ggplot(data = nations, aes(x = log(GDP), y = log(TFR))) +
 leeds <- import("leeds_accidents.csv")
 
 leeds %>% distinct(ref_number) %>% 
-  ggplot(aes(x = num_casualties)) + 
-  facet_wrap(~ weather_conditions) + 
-  geom_bar()
+  ggplot(aes(x = factor(num_casualties))) + 
+  # facet_wrap(~ weather_conditions) + 
+  geom_bar() -> leeds_barplot
 
 
   
